@@ -1,0 +1,130 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #111;
+  color: #eee;
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(to bottom, #111, #222);
+  padding: 25px 0;
+  text-align: center;
+  border-bottom: 2px solid #c0392b;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #ccc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover,
+nav ul li a.ativo {
+  color: #fff;
+  border-bottom: 2px solid #fff;
+}
+
+/* MAIN SECTIONS */
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+/* INTRO */
+.intro img {
+  max-width: 300px;
+  border-radius: 10px;
+  margin: 15px;
+}
+
+/* SEÇÃO ATOR */
+.secao-ator {
+  position: relative;
+  width: 80%;
+  margin: 60px auto;
+  padding: 40px;
+  color: #eee;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 2px solid #c0392b;
+}
+
+/* Fundo da secção ator */
+.secao-ator::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("https://i.pinimg.com/564x/2a/30/c4/2a30c4f1e12442e9db24cc592f04eb44.jpg") center/cover no-repeat;
+  z-index: -2;
+}
+
+/* Overlay escuro */
+.secao-ator::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+  z-index: -1;
+}
+
+
+/* Timeline */
+.timeline ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.timeline li {
+  margin: 15px 0;
+  padding-left: 15px;
+  border-left: 3px solid #c0392b;
+  text-align: left;
+}
+
+/* Cards habilidades */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background-color: rgba(192, 57, 43, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+}
+
+/* FOOTER */
+footer {
+  background-color: #222;
+  color: #aaa;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 2px solid #c0392b;
+  margin-top: 40px;
+}
